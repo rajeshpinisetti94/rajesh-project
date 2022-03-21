@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="mytesttSuite">
+  <test thread-count="5" name="myTestresult">
+    <classes>
+      <class name="com.testsenarios.Jricurrenturl"/>
+      <class name="com.testsenarios.Thirupathicreateaccount"/>
+      <class name="com.testsenarios.Studentregistrationn"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

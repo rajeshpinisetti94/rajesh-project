@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [mytesttSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="myTestresult(failed)">
+    <classes>
+      <class name="com.testsenarios.Studentregistrationn">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- com.testsenarios.Studentregistrationn -->
+      <class name="com.testsenarios.Jricurrenturl">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- com.testsenarios.Jricurrenturl -->
+    </classes>
+  </test> <!-- myTestresult(failed) -->
+</suite> <!-- Failed suite [mytesttSuite] -->
