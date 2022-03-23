@@ -42,8 +42,10 @@
 	  	driver.findElement(By.xpath("//input[@id='creditCardYear']")).sendKeys("2025");
 	  	driver.findElement(By.xpath("//input[@id='nameOnCard']")).sendKeys("raj");
 	  	driver.findElement(By.xpath("//input[@type='submit']")).click();
-	  
-	  	
+	  String mes = driver.findElement(By.xpath("//h1")).getText();
+	  System.out.println(mes);
+	  String b= driver.findElement(By.xpath("//table[@class='table']")).getText();
+	  System.out.println(b);
 	  	
 	  	
 	  	

@@ -1,15 +1,21 @@
 package com.testsenarios;
 
+import java.io.File;
+import java.io.IOException;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.io.FileHandler;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Jricurrenturl {
   @Test
-  public void f() throws InterruptedException {
+  public void f() throws InterruptedException, Exception {
 	  WebDriver driver;
 	  
 	  WebDriverManager.chromedriver().setup();	  
@@ -37,7 +43,9 @@ public class Jricurrenturl {
 	  Thread.sleep(2000);
 	  driver.navigate().back();
 	  
-	  
+	 File abc= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	  String pathofthescreenshots= "./screenshots/";
+	  FileHandler.copy(abc, new File(pathofthescreenshots+"test.png"));
 	  
 	  
 	  

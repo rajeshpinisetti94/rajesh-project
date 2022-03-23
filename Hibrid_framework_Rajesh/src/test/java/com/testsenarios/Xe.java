@@ -18,9 +18,10 @@ public class Xe {
 	  driver.manage().window().maximize();
 	  driver.get("https://www.xe.com/");
 	  
-	  String mon = driver.findElement(By.xpath("//span[@class='amount-input__NumberInput-sc-1gq6pic-1 amount-input__GhostSpan-sc-1gq6pic-2 eIuRdk eQVLHh']")).getText();
-	  System.out.println(mon);
-	  String ste = driver.findElement(By.xpath("//h2[@class='heading__Heading1-n07sti-0 heading__Heading2-n07sti-1 iXbZUl']")).getText();
+	  //String mon = driver.findElement(By.xpath("//span[normalize-space()='$']")).getAttribute();
+	  
+	 // System.out.println(mon);
+	  String ste = driver.findElement(By.xpath("//h2[normalize-space()='How to transfer money in 3 easy steps']")).getText();
 	  System.out.println(ste);
 	  
 	  
